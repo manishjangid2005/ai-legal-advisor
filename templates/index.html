@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AI Legal Advisor — Chat</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">AI Legal Advisor</div>
+      <div class="tag">Practical 12 — Rule-based Legal Assistant</div>
+    </header>
+
+    <main class="main">
+      <section class="chat-panel">
+        <div id="chatbox" class="chatbox">
+          <div class="bot message">Hello — I'm your AI Legal Advisor. Ask me about traffic rules, cyberbullying, FIR process, fines, or basic legal steps. (This is advisory only — not a substitute for legal counsel.)</div>
+        </div>
+
+        <div class="input-row">
+          <input id="msg" placeholder="Type your legal question here..." autocomplete="off" />
+          <button id="send">Send</button>
+        </div>
+      </section>
+
+      <aside class="info-panel">
+        <h3>Quick Tips</h3>
+        <ul>
+          <li>Be specific: include keywords like "FIR", "cyberbullying", "helmet fine".</li>
+          <li>For emergencies, contact local police immediately.</li>
+          <li>Evidence is important — save screenshots, messages, receipts.</li>
+        </ul>
+        <h4>Sample Questions</h4>
+        <ul>
+          <li>How to file FIR for online fraud?</li>
+          <li>What is fine for riding without helmet?</li>
+          <li>How to report cyberbullying on Instagram?</li>
+          <li>What documents are required for FIR?</li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <div>Developed for Practical 12 — AI Legal Advisor (Rule-based)</div>
+    </footer>
+  </div>
+
+<script>
+const sendBtn = document.getElementById("send");
+const msgInput = document.getElementById("msg");
+const chatbox = document.getElementById("chatbox");
+
+function addMessage(text, cls){
+  const d = document.createElement("div");
+  d.className = cls + " message";
+  d.innerText = text;
+  chatbox.appendChild(d);
+  chatbox.scrollTop = chatbox.scrollHeight;
+}
+
+sendBtn.onclick = async () => {
+  const msg = msgInput.value.trim();
+  if(!msg) return;
+  addMessage(msg, "user");
+  msgInput.value = "";
+  try {
+    const res = await fetch("/chat", {
+      method: "POST",
+      headers: {"Content-Type":"application/json"},
+      body: JSON.stringify({message: msg})
+    });
+    const data = await res.json();
+    addMessage(data.answer, "bot");
+  } catch (e) {
+    addMessage("Error contacting server. Try again.", "bot");
+  }
+};
+
+msgInput.addEventListener("keyup", function(e){
+  if(e.key === "Enter") sendBtn.click();
+});
+</script>
+</body>
+</html>

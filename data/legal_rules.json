@@ -1,0 +1,87 @@
+[
+  {
+    "intent": "helmet_fine",
+    "keywords": [
+      "helmet",
+      "without helmet",
+      "helmet fine",
+      "no helmet"
+    ],
+    "detailed_response": "Riding without helmet:\n\n• Applicable law: Motor Vehicles Act (Sections relating to helmet rules).\n• Typical penalty: Fine amount varies by state; commonly ₹500–₹1000 for first offence. In many states the fine is ₹1000.\n• What to do if challaned: Pay the fine at the traffic police office or via e-challan portal. Keep receipt.\n• Documents to carry while riding: Driving License (DL), Vehicle Registration (RC), Insurance.\n\nNote: If the challan is wrong, note the officer details and file a complaint at the traffic police station or via the state traffic portal."
+  },
+  {
+    "intent": "traffic_rules_general",
+    "keywords": [
+      "traffic",
+      "signal",
+      "red light",
+      "traffic rules",
+      "parking fine"
+    ],
+    "detailed_response": "Traffic rules — quick guide:\n\n• Obey traffic signals: Stopping at red light is mandatory. Jumping signals may attract a fine and penalty points.\n• Lane discipline and speed limits: Follow posted speed limits. Speeding attracts fines and possible licence suspension.\n• Parking violations: Unauthorised parking can lead to tow-away and fines.\n• Fines & challans: Use your state's e-challan portal to view and pay fines online.\n\nIf fined, save challan number and payment receipt; for disputes, contact local traffic police."
+  },
+  {
+    "intent": "cyberbullying",
+    "keywords": [
+      "cyberbullying",
+      "abuse online",
+      "harassment online",
+      "online bullying"
+    ],
+    "detailed_response": "Cyberbullying and online harassment:\n\n• Relevant law: IT Act, 2000 (Sections dealing with electronic communication and cyber offences). Criminal provisions under IPC may also apply.\n• Steps to take:\n  1. Preserve evidence: screenshots, URLs, timestamps, messages.\n  2. Report on platform: Use report/abuse option (Instagram, Facebook, Twitter) to flag the content.\n  3. File complaint: For serious harassment, file an FIR at the local police station or online at the cybercrime portal (cybercrime.gov.in).\n  4. Legal notice: For wrongful content, consider sending a legal notice via lawyer.\n\n• Advice: Avoid engaging with the harasser; preserve all records and consult cybercrime cell for guidance."
+  },
+  {
+    "intent": "online_fraud_fir",
+    "keywords": [
+      "online fraud",
+      "fraud",
+      "scam",
+      "payment scam",
+      "fraud online",
+      "fraud website"
+    ],
+    "detailed_response": "How to report an online fraud / file an FIR:\n\n1. Preserve all evidence: transaction IDs, screenshots, emails, chat logs, seller details.\n2. Approach the bank/payment gateway: raise chargeback/dispute and notify bank immediately.\n3. File FIR: Visit nearest police station or file online complaint at the National Cyber Crime Portal (cybercrime.gov.in). Provide all evidence.\n4. Cyber Cell: The police cyber cell will investigate; obtain FIR number/acknowledgement.\n\nTips:\n• Lodge complaint promptly. • Keep records of communications. • If large sums are involved, involve bank and cyber cell immediately."
+  },
+  {
+    "intent": "fir_process",
+    "keywords": [
+      "fir",
+      "file fir",
+      "how to file fir",
+      "lodging fir"
+    ],
+    "detailed_response": "FIR (First Information Report) — step-by-step:\n\n1. Visit the nearest police station: Provide the details of the incident and evidence.\n2. Online FIR: Many states allow online complaint registration — check state police portal.\n3. Provide documents: ID proof, evidence (screenshots, transaction receipts), witness details if any.\n4. Obtain a copy: The police should give an FIR copy/acknowledgement with FIR number.\n5. Follow-up: Use FIR number to track investigation; contact investigating officer for updates.\n\nIf police refuse to file FIR, approach the Superintendent of Police or file a complaint with higher authorities and seek legal advice."
+  },
+  {
+    "intent": "document_requirements",
+    "keywords": [
+      "documents",
+      "documents required",
+      "what documents",
+      "id proof",
+      "evidence"
+    ],
+    "detailed_response": "Common documents required when filing complaints or FIRs:\n\n• Identity proof: Aadhar card, Passport, Voter ID, Driving License.\n• Transaction records: bank statements, payment confirmations, transaction IDs.\n• Electronic evidence: screenshots, chat logs, emails, URLs.\n• Photographs/videos: If available, provide clear copies.\n\nAlways carry original ID when visiting police station and submit photocopies as required."
+  },
+  {
+    "intent": "penalties_general",
+    "keywords": [
+      "fine",
+      "penalty",
+      "punishment",
+      "punishable",
+      "section"
+    ],
+    "detailed_response": "General penalties and fines (overview):\n\n• Traffic fines: Vary by offence and state — e.g., no helmet, signal jumping, over-speeding.\n• Cyber offences: Under IT Act penalties include fines and imprisonment depending on the section.\n• Theft/fraud: Penal provisions under IPC for theft, cheating, and fraud with varying sentences.\n\nFor exact penalty and section references, consult a legal professional or refer to the specific statute and state notifications."
+  },
+  {
+    "intent": "legal_advice_basic",
+    "keywords": [
+      "legal advice",
+      "what should i do",
+      "help me",
+      "advise"
+    ],
+    "detailed_response": "Basic legal advisory steps:\n\n1. Preserve evidence: Save all relevant documents and digital records.\n2. Do not delete messages: Maintain original copies/screenshots with timestamps.\n3. File complaint or FIR: Approach police or use online portals for cybercrime.\n4. Contact a lawyer: For civil remedies or legal notices, seek legal counsel.\n5. Emergency: If you are in immediate danger, call local emergency services/police.\n\nThis assistant provides general guidance only and is not a substitute for professional legal advice."
+  }
+]
