@@ -50,5 +50,17 @@ def chat():
     answer = generate_answer(msg)
     return jsonify({"answer": answer})
 
+
+@app.route("/")
+def index():
+    return render_template("index.html")
+
+@app.route("/chat", methods=["POST"])
+def chat():
+    data = request.get_json() or {}
+    msg = data.get("message","")
+    answer = generate_answer(msg)
+    return jsonify({"answer": answer})
+
 if __name__ == '__main__':
     app.run(debug=True)
